@@ -5,13 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import edu.asu.diging.tutorial.spring.one.service.MoodService;
+import edu.asu.diging.tutorial.spring.one.service.IMoodService;
 
 @Controller
 public class HomeController {
 
 	@Autowired
-    private MoodService service;
+    private IMoodService service;
 	
 	@RequestMapping(value = "/")
 	public String home(ModelMap map) {
